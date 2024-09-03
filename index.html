@@ -1,4 +1,134 @@
-We can solve the problem usng analytic geometry.
-Let (0, 0) be the defined to be the center of the circle.
-The equation for the line AB can be determined by the point P
-and the slope of the line.
+<html>
+<head>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>     
+</head>
+<body style="width: 500px">
+<p>
+<strong>Problem:</strong>
+Given a quadralateral \(ABCD\) with a semicircle of radius \(r\)
+inscribed as shown
+<br>
+<br>
+<img src="problem.svg" width="400px">
+<br>
+<br>
+what are the lengths \(|AD|\) and \(|BC|\) in terms of \(|AB|\) and \(r\)?
+<p>
+<strong>Solution:</strong>
+We can solve the problem usng analytic geometry and trigonometry.
+Let us begin by adding few elements to the diagram.
+<br>
+<br>
+<img src="solution.svg" width="500px">
+<br>
+<br>
+We will first handle the case where \(0 < \theta < 90\unicode{xb0}\),
+so that \(\tan \theta\) is defined and nonzero.
+<p>
+Define the origin (0, 0) to be the center of the semicircle.
+The equation of the line \(AB\) can be written in
+<a href="https://mathworld.wolfram.com/Point-SlopeForm.html">
+point-slope form</a> using the point \(P\),
+which has the coordinates
+\((r \cos \theta, r \sin \theta)\), and the slope of the line, which is
+\(-\tan(90\unicode{xb0} - \theta) = \frac{-1}{\tan \theta}\).
+</p>
+<p>
+The equation of the line \(AB\) is then
+\[y = r \sin \theta - \frac{x - r \cos \theta}{\tan \theta}
+= r \left( \sin \theta+ \frac{\cos \theta}{\tan \theta} \right)
+- \frac{x}{\tan \theta} 
+. \]
+We can then find the lengths of \(AD\) and \(BC\) by
+substituting \(-r\) and \(r\)
+for \(x\).
+\[
+\begin{align}
+|AD| &= r \left( \sin \theta+ \frac{\cos \theta}{\tan \theta} \right)
++ \frac{x}{\tan \theta} \\ 
+|BC| &= r \left( \sin \theta+ \frac{\cos \theta}{\tan \theta} \right)
+- \frac{x}{\tan \theta} \\ 
+\end{align}
+\]
+Because tangents drawn from the same point are equal,
+we know \(|AD| = |AP|\) and  \(|BP| = |BC|\). 
+This means that
+\[
+|AB| = |AD| + |BC| 
+= 2r \left(\sin \theta + \frac{\cos \theta}{\tan \theta}\right)
+\]
+and that
+\[
+\begin{align}
+\tag{1}
+|AD| &= \frac{|AB|}{2} + \frac{r}{\tan \theta} \\
+\tag{2}
+|BC| &= \frac{|AB|}{2} - \frac{r}{\tan \theta}. \\
+\end{align}
+\]
+Note that
+\[
+\begin{align}
+|AB|^2 &= 4r^2\left(
+\sin\theta + \frac{\cos\theta}{\tan\theta}
+\right)^2 \\
+&= 4r^2\left(\sin^2\theta + \frac{\cos^2\theta}{\tan^2\theta} +
+2\frac{\sin\theta \cos\theta}{\tan\theta}\right) \\
+&= 4r^2\left(\sin^2\theta + \frac{\cos^2\theta}{\tan^2\theta} +
+2\cos^2\theta\right) \quad
+\left[\mathrm{since} \tan\theta = \frac{\sin\theta}{\cos \theta}\right] \\
+&= 4r^2\left(\frac{\cos^2\theta}{\tan^2\theta} +
+\cos^2\theta + 1\right) \quad
+\left[\mathrm{since} \sin^2\theta + \cos^2\theta = 1 \right] \\
+\end{align}
+\]
+and so
+\[
+\begin{align}
+|AB|^2 - 4r^2 &=
+4r^2\left(\frac{\cos^2\theta}{\tan^2\theta} +
+\cos^2\theta\right) \\
+&= \frac{4r^2}{\tan^2\theta}\left(\cos^2\theta + \cos^2\theta\tan^2\theta\right) \\
+&= \frac{4r^2}{\tan^2\theta}\left(\cos^2\theta + \sin^2\theta\right) 
+\quad
+\left[\mathrm{since} \tan\theta = \frac{\sin\theta}{\cos \theta}\right] \\
+&= \frac{4r^2}{\tan^2\theta}
+\quad
+\left[\mathrm{since} \sin^2\theta + \cos^2\theta = 1 \right]. \\
+\end{align}
+\]
+And finally,
+\[
+\frac{\sqrt{|AB|^2 - 4r^2}}{2} = \frac{r}{\tan\theta}.
+\]
+Substituting for \(\frac{r}{\tan \theta}\) in equations (1) and (2), we get
+\[
+|AD| = \frac{|AB| + \sqrt{|AB|^2 - 4r^2}}{2} \\
+\]
+\[
+|BC| = \frac{|AB| - \sqrt{|AB|^2 - 4r^2}}{2} \\
+\]
+<p>
+These two formulas also work when \(\theta = 90\unicode{xb0}\), because
+in that case, \(ABCD\) is a rectangle with
+\(|AB| = 2r\) and \(|AD| = |BC| = r\).
+<p>
+To handle the case where \(\theta > 90\unicode{xb0}\),
+we take the mirror image of our diagram.
+All the equations work the same,
+except that the roles of \(AD\) and \(BC\) are reversed.
+So we get
+\[
+|AD| = \frac{|AB| - \sqrt{|AB|^2 - 4r^2}}{2} \\
+\]
+\[
+|BC| = \frac{|AB| + \sqrt{|AB|^2 - 4r^2}}{2} \\
+\]
+<p>
+Note that if \(|AB| \neq 2r\), there will be two possible solutions
+which are mirror images of each other. We can express this situation as
+\[
+\{|AD|, |BC|\} = \left\{\frac{|AB| \pm \sqrt{|AB|^2 - 4r^2}}{2}\right\}
+\]
+</body>
+</html>
