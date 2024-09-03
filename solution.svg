@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 12.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 51448)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_svg "http://www.w3.org/2000/svg">
+	<!ENTITY ns_xlink "http://www.w3.org/1999/xlink">
+]>
+<svg  version="1.1" id="Layer_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="1267.758" height="547.346"
+	 viewBox="0 0 1267.758 547.346" overflow="visible" enable-background="new 0 0 1267.758 547.346" xml:space="preserve">
+<rect y="6.096" fill="none" width="52" height="54"/>
+<text transform="matrix(1 0 0 1 0 40.1753)" font-family="'Myriad-Roman'" font-size="48">A</text>
+<rect x="629.333" y="218.846" fill="none" width="52" height="54"/>
+<text transform="matrix(1 0 0 1 629.3335 252.9253)" font-family="'Myriad-Roman'" font-size="48">B</text>
+<rect x="629.333" y="493.346" fill="none" width="52" height="54"/>
+<text transform="matrix(1 0 0 1 629.3335 527.4248)" font-family="'Myriad-Roman'" font-size="48">C</text>
+<rect x="7.5" y="493.346" fill="none" width="52" height="54"/>
+<text transform="matrix(1 0 0 1 7.5 527.4248)" font-family="'Myriad-Roman'" font-size="48">D</text>
+<rect x="351.333" y="324.346" fill="none" width="52" height="54"/>
+<text transform="matrix(1 0 0 1 351.3335 358.4248)" font-family="'Myriad-Roman'" font-size="48">r</text>
+<g>
+	<g id="source-7">
+		<path fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M645.017,482.244H36.184V47.492L645.017,269.09
+			V482.244z"/>
+		<path fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M645.017,482.244
+			c0-108.757-58.021-209.254-152.209-263.633c-94.187-54.377-210.229-54.377-304.416,0C94.206,272.99,36.184,373.487,36.184,482.244
+			"/>
+		<path fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M340.601,482.244l104.117-286.057"/>
+	</g>
+</g>
+<polyline fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" points="645.472,269.246 1255.941,486.735 
+	645.017,482.244 "/>
+<rect x="439" y="151.096" fill="none" width="52" height="54"/>
+<text transform="matrix(1 0 0 1 438.9995 185.1753)" font-family="'Myriad-Roman'" font-size="48">P</text>
+<rect x="362" y="434.096" fill="none" width="52" height="54"/>
+<text transform="matrix(1 0 0 1 361.9995 467.4551)" font-family="'TimesNewRomanPSMT'" font-size="48">θ</text>
+<rect x="955.167" y="435.013" fill="none" width="168" height="54"/>
+<text transform="matrix(1 0 0 1 955.1665 468.3721)" font-family="'TimesNewRomanPSMT'" font-size="48">90° - θ</text>
+<rect x="291.501" y="493.346" fill="none" width="168" height="54"/>
+<text transform="matrix(1 0 0 1 291.5015 527.4248)" font-family="'Myriad-Roman'" font-size="48">(0, 0)</text>
+</svg>
